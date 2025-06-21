@@ -23,6 +23,10 @@ connectDB();
 app.use('/api/auth', userRoutes);
 app.use('/api/notes', noteRoutes); 
 
+app.get("/",(req,res)=>{
+  res.send("hello world");
+})
+
 app.use((err: Error, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error(err.stack);
   res.status(500).json({
