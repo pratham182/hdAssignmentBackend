@@ -4,14 +4,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/mongoose": "^5.11.97",
     "@types/node": "^24.0.3",
     "@types/nodemailer": "^6.4.17",
     "nodemon": "^3.1.10",
@@ -19,11 +22,15 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
     "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-validator": "^7.2.1",
+    "google-auth-library": "^10.1.0",
     "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
     "mongoose": "^8.16.0",
     "nodemailer": "^7.0.3"
   }
